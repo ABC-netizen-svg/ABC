@@ -1,11 +1,15 @@
-import React from "react";
-import OpsPage from "./components/OpsPage";
+import React from 'react';
+import { AuthProvider } from './context/AuthContext';
+import OpsPage from './components/OpsPage';
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <OpsPage />
-    </div>
+    <AuthProvider>
+      <div className="App">
+        <OpsPage />
+      </div>
+    </AuthProvider>
   );
 }
 

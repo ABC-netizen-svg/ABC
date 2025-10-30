@@ -3,15 +3,13 @@
   max-width: 95%;
 }
 
-/* Scrollable tables */
+
 .table-container {
-  max-height: 350px;  /* Adjust if needed */
   overflow-y: auto;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Fix header alignment during scroll */
 .table-container table {
   width: 100%;
   margin-bottom: 0;
@@ -22,11 +20,11 @@
   position: sticky;
   top: 0;
   z-index: 2;
-  background: #212529; /* Bootstrap table-dark bg */
+  background: #212529;
   color: white;
 }
 
-/* Card styling */
+
 .summary-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -36,22 +34,22 @@
 }
 
 .summary-card.pending {
-  background-color: white;           /* White background */
-  border: 2px solid #ffd100;        /* Yellow border */
-  box-shadow: 0 4px 6px rgba(255, 209, 0, 0.4); /* Yellow shadow */
-  color: #333;                       /* Dark text */
+  background-color: white;        
+  border: 2px solid #ffd100;        
+  box-shadow: 0 4px 6px rgba(255, 209, 0, 0.4); 
+  color: #333;                       
 }
 
-/* Inputs and labels */
+
 input[type="text"],
 input[type="date"] {
   min-width: 180px;
 }
 .status-synced {
-  background-color: rgba(0, 166, 81, 0.1); /* light green row */
+  background-color: rgba(0, 166, 81, 0.1); 
 }
 .status-pending {
-  background-color: rgba(255, 209, 0, 0.1); /* light yellow row */
+  background-color: rgba(255, 209, 0, 0.1); 
 }
 label {
   font-weight: 500;
@@ -67,7 +65,7 @@ label {
   from { opacity: 0; transform: translateY(-5px);}
   to { opacity: 1; transform: translateY(0);}
 }
-/* Table row hover */
+
 .table-hover tbody tr:hover {
   background-color: #f8f9fa;
 }
